@@ -1,0 +1,9 @@
+c:\users\ernesto\documents\visual studio 2013\Projects\ProductsPortfolio\ProductsPortfolio\bin\Debug\ProductsPortfolio.exe.config
+c:\users\ernesto\documents\visual studio 2013\Projects\ProductsPortfolio\ProductsPortfolio\bin\Debug\ProductsPortfolio.exe
+c:\users\ernesto\documents\visual studio 2013\Projects\ProductsPortfolio\ProductsPortfolio\bin\Debug\ProductsPortfolio.pdb
+c:\users\ernesto\documents\visual studio 2013\Projects\ProductsPortfolio\ProductsPortfolio\obj\Debug\ProductsPortfolio.csprojResolveAssemblyReference.cache
+c:\users\ernesto\documents\visual studio 2013\Projects\ProductsPortfolio\ProductsPortfolio\obj\Debug\ProductsPortfolio.Form1.resources
+c:\users\ernesto\documents\visual studio 2013\Projects\ProductsPortfolio\ProductsPortfolio\obj\Debug\ProductsPortfolio.Properties.Resources.resources
+c:\users\ernesto\documents\visual studio 2013\Projects\ProductsPortfolio\ProductsPortfolio\obj\Debug\ProductsPortfolio.csproj.GenerateResource.Cache
+c:\users\ernesto\documents\visual studio 2013\Projects\ProductsPortfolio\ProductsPortfolio\obj\Debug\ProductsPortfolio.exe
+c:\users\ernesto\documents\visual studio 2013\Projects\ProductsPortfolio\ProductsPortfolio\obj\Debug\ProductsPortfolio.pdb
