@@ -27,7 +27,6 @@ namespace ProductsPortfolio
         {
             this.Close();
         }
-
         private void btn_create_Click(object sender, EventArgs e)
         {
             panel_create.Visible = true;
@@ -39,6 +38,7 @@ namespace ProductsPortfolio
 
         private void btn_update_Click(object sender, EventArgs e)
         {
+
             try
             {
                 panel_create.Visible = false;
@@ -56,6 +56,10 @@ namespace ProductsPortfolio
             }
             catch(Exception ex)
             {
+                panel_create.Visible = false;
+                panel_principal.Visible = true;
+                panel_update.Visible = false;
+                btn_delete.Enabled = true;
                 MessageBox.Show("No selected product");
             }
             
@@ -161,6 +165,63 @@ namespace ProductsPortfolio
             objdDA.consult("select NAMEPROD, PRICEPROD, CATEPROD from T01_PRODUCTS", "T01_PRODUCTS");
             this.dataGridView1.DataSource = objdDA.ds.Tables["T01_PRODUCTS"];
             this.dataGridView1.Refresh();
+        }
+
+        private void textBox_price_update_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsLetter(e.KeyChar))
+                e.Handled = true;
+            else if (char.IsSymbol(e.KeyChar))
+                e.Handled = true;
+            else if (char.IsPunctuation(e.KeyChar))
+                e.Handled = true;
+        }
+
+        private void textBox_name_update_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsSymbol(e.KeyChar))
+                e.Handled = true;
+            else if (char.IsPunctuation(e.KeyChar))
+                e.Handled = true;
+        }
+
+        private void textBox_category_update_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsLetter(e.KeyChar))
+                e.Handled = true;
+            else if (char.IsSymbol(e.KeyChar))
+                e.Handled = true;
+            else if (char.IsPunctuation(e.KeyChar))
+                e.Handled = true;
+        }
+
+        private void textBox_name_create_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsSymbol(e.KeyChar))
+                e.Handled = true;
+            else if (char.IsPunctuation(e.KeyChar))
+                e.Handled = true;
+        }
+
+
+        private void textBox_category_create_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsLetter(e.KeyChar))
+                e.Handled = true;
+            else if (char.IsSymbol(e.KeyChar))
+                e.Handled = true;
+            else if (char.IsPunctuation(e.KeyChar))
+                e.Handled = true;
+        }
+
+        private void textBox_price_create_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsLetter(e.KeyChar))
+                e.Handled = true;
+            else if (char.IsSymbol(e.KeyChar))
+                e.Handled = true;
+            else if (char.IsPunctuation(e.KeyChar))
+                e.Handled = true;
         }
 
     }

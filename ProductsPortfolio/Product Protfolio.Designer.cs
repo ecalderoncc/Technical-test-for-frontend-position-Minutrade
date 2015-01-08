@@ -35,6 +35,7 @@
             this.btn_exit = new System.Windows.Forms.Button();
             this.panel_update = new System.Windows.Forms.Panel();
             this.groupBox_update = new System.Windows.Forms.GroupBox();
+            this.textBox_category_update = new System.Windows.Forms.TextBox();
             this.label_category_update = new System.Windows.Forms.Label();
             this.textBox_price_update = new System.Windows.Forms.TextBox();
             this.label_price_update = new System.Windows.Forms.Label();
@@ -45,6 +46,7 @@
             this.button_accept_update = new System.Windows.Forms.Button();
             this.panel_create = new System.Windows.Forms.Panel();
             this.groupBox_create = new System.Windows.Forms.GroupBox();
+            this.textBox_category_create = new System.Windows.Forms.TextBox();
             this.label_category_create = new System.Windows.Forms.Label();
             this.textBox_price_create = new System.Windows.Forms.TextBox();
             this.label_price_create = new System.Windows.Forms.Label();
@@ -54,8 +56,6 @@
             this.btn_reset_create = new System.Windows.Forms.Button();
             this.btn_accept_create = new System.Windows.Forms.Button();
             this.panel_principal = new System.Windows.Forms.Panel();
-            this.textBox_category_update = new System.Windows.Forms.TextBox();
-            this.textBox_category_create = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -85,9 +85,9 @@
             // 
             // splitContainer1.Panel2
             // 
-            this.splitContainer1.Panel2.Controls.Add(this.panel_update);
             this.splitContainer1.Panel2.Controls.Add(this.panel_create);
             this.splitContainer1.Panel2.Controls.Add(this.panel_principal);
+            this.splitContainer1.Panel2.Controls.Add(this.panel_update);
             this.splitContainer1.Size = new System.Drawing.Size(884, 412);
             this.splitContainer1.SplitterDistance = 177;
             this.splitContainer1.TabIndex = 1;
@@ -162,6 +162,15 @@
             this.groupBox_update.TabStop = false;
             this.groupBox_update.Text = "Update Product Information";
             // 
+            // textBox_category_update
+            // 
+            this.textBox_category_update.Location = new System.Drawing.Point(434, 115);
+            this.textBox_category_update.Multiline = true;
+            this.textBox_category_update.Name = "textBox_category_update";
+            this.textBox_category_update.Size = new System.Drawing.Size(101, 25);
+            this.textBox_category_update.TabIndex = 13;
+            this.textBox_category_update.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_category_update_KeyPress);
+            // 
             // label_category_update
             // 
             this.label_category_update.AutoSize = true;
@@ -179,6 +188,7 @@
             this.textBox_price_update.Name = "textBox_price_update";
             this.textBox_price_update.Size = new System.Drawing.Size(101, 25);
             this.textBox_price_update.TabIndex = 9;
+            this.textBox_price_update.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_price_update_KeyPress);
             // 
             // label_price_update
             // 
@@ -197,6 +207,7 @@
             this.textBox_name_update.Name = "textBox_name_update";
             this.textBox_name_update.Size = new System.Drawing.Size(403, 25);
             this.textBox_name_update.TabIndex = 7;
+            this.textBox_name_update.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_name_update_KeyPress);
             // 
             // label_name_update
             // 
@@ -267,6 +278,15 @@
             this.groupBox_create.TabStop = false;
             this.groupBox_create.Text = "Create Product";
             // 
+            // textBox_category_create
+            // 
+            this.textBox_category_create.Location = new System.Drawing.Point(434, 115);
+            this.textBox_category_create.Multiline = true;
+            this.textBox_category_create.Name = "textBox_category_create";
+            this.textBox_category_create.Size = new System.Drawing.Size(101, 25);
+            this.textBox_category_create.TabIndex = 14;
+            this.textBox_category_create.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_category_create_KeyPress);
+            // 
             // label_category_create
             // 
             this.label_category_create.AutoSize = true;
@@ -284,6 +304,7 @@
             this.textBox_price_create.Name = "textBox_price_create";
             this.textBox_price_create.Size = new System.Drawing.Size(101, 25);
             this.textBox_price_create.TabIndex = 9;
+            this.textBox_price_create.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_price_create_KeyPress);
             // 
             // label_price_create
             // 
@@ -302,6 +323,7 @@
             this.textBox_name_create.Name = "textBox_name_create";
             this.textBox_name_create.Size = new System.Drawing.Size(403, 25);
             this.textBox_name_create.TabIndex = 7;
+            this.textBox_name_create.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_name_create_KeyPress);
             // 
             // label_name_create
             // 
@@ -353,22 +375,6 @@
             this.panel_principal.Name = "panel_principal";
             this.panel_principal.Size = new System.Drawing.Size(704, 406);
             this.panel_principal.TabIndex = 1;
-            // 
-            // textBox_category_update
-            // 
-            this.textBox_category_update.Location = new System.Drawing.Point(434, 115);
-            this.textBox_category_update.Multiline = true;
-            this.textBox_category_update.Name = "textBox_category_update";
-            this.textBox_category_update.Size = new System.Drawing.Size(101, 25);
-            this.textBox_category_update.TabIndex = 13;
-            // 
-            // textBox_category_create
-            // 
-            this.textBox_category_create.Location = new System.Drawing.Point(434, 115);
-            this.textBox_category_create.Multiline = true;
-            this.textBox_category_create.Name = "textBox_category_create";
-            this.textBox_category_create.Size = new System.Drawing.Size(101, 25);
-            this.textBox_category_create.TabIndex = 14;
             // 
             // dataGridView1
             // 
